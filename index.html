@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chloe Vale</title>
+<meta name="description" content="Todos mis links en un solo lugar">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ece6f7;
+    --ink: #2b1a47;
+    --btn: #2b1a47;
+    --btn-text: #ffffff;
+    --btn-hover: #5a3f8f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "DM Sans", system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px;
+  }
+  main { width: 100%; max-width: 420px; text-align: center; }
+  .avatar {
+    width: 96px; height: 96px; border-radius: 50%;
+    background: var(--ink); color: var(--bg);
+    font-family: "Syne", sans-serif; font-weight: 800; font-size: 40px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+  }
+  /* Para usar tu foto: sube foto.jpg al repo y cambia el div .avatar por <img class="avatar" src="foto.jpg" alt="Chloe"> */
+  img.avatar { object-fit: cover; }
+  h1 {
+    font-family: "Syne", sans-serif; font-weight: 800;
+    font-size: 2.2rem; margin: 0 0 8px; letter-spacing: -0.02em;
+  }
+  p.bio { margin: 0 0 32px; font-size: 1.05rem; line-height: 1.5; }
+  nav { display: grid; gap: 14px; }
+  a.link {
+    display: block; padding: 16px 20px;
+    background: var(--btn); color: var(--btn-text);
+    border-radius: 14px; text-decoration: none;
+    font-weight: 500; font-size: 1.05rem;
+    transition: background .15s ease, transform .15s ease;
+  }
+  a.link:hover { background: var(--btn-hover); transform: translateY(-2px); }
+  a.link:focus-visible { outline: 3px solid var(--btn-hover); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { a.link { transition: none; } a.link:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar" aria-hidden="true">C</div>
+  <h1>Chloe Vale</h1>
+  <p class="bio">Aquí están todos mis links.</p>
+  <nav>
+    <!-- Cambia cada href por tu link real y el texto por el nombre del botón. Copia y pega una línea para agregar más. -->
+    <a class="link" href="https://instagram.com/tuusuario">Instagram</a>
+    <a class="link" href="https://tiktok.com/@tuusuario">TikTok</a>
+    <a class="link" href="https://wa.me/56900000000">WhatsApp</a>
+  </nav>
+</main>
+</body>
+</html>
